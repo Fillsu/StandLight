@@ -1,9 +1,9 @@
 #include "Controler.h"
-#include "string"
 
-Controler::Controler(Led *led)
+
+Controler::Controler(View *viewer)
 {
-light = led ;
+view= viewer ;
 lightState=LIGHT_OFF;
 }
 
@@ -19,17 +19,17 @@ void Controler::updateEvent(std::string strBtn)
         case LIGHT_OFF:
         if(strBtn=="powerButton")
         {
-            lightState=LIGHT_ON;
-            light->On();
+            //lightState=LIGHT_ON;
+            view->UpdateView("StateOn");
         }
         break;
 
-        case LIGHT_ON:
-        if(strBtn=="powerButton")
-        {
-            lightState=LIGHT_OFF;
-            light->Off();
-        }
+        // case LIGHT_ON:
+        // if(strBtn=="powerButton")
+        // {
+        //     lightState=LIGHT_OFF;
+        //     view->UpdateView("StateOff");
+        // }
         break;
     }
 }
