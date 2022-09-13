@@ -1,7 +1,7 @@
 #ifndef LISTENER_H
 #define LISTENER_H
 #include "Listener.h"
-
+#include "Controler.h"
 #pragma once
 
 class Listener
@@ -9,10 +9,10 @@ class Listener
     
   private:
   Button *powerButton;
-  Led *light;
+  Controler *cont;
   
   public :
-  Listener(Button *button, Led *led);
+  Listener(Button *button, Controler *led);
   ~Listener();
   void checkEvent();
 

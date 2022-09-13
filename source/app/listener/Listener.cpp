@@ -7,15 +7,15 @@ void Listener::checkEvent()
         if(powerButton->getState()==RELEASE_ACTIVE)
     {
         
-            light->Toggle();
+            cont->updateEvent("powerButton");
 
     }
 }
 
-Listener::Listener(Button *button, Led *led)
+Listener::Listener(Button *button, Controler *led)
 {
  powerButton=button;
- light = led;
+ cont = led;
 }
 
 Listener::~Listener()
