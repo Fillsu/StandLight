@@ -3,20 +3,20 @@
 
 
 #include <string>
-#include "View.h"
+#include "Service.h"
 
 
 class Controler
 {
 private:
     int lightState;
-    View *view;
+    Service *service;
 
 public:
     
     virtual ~Controler();
     void updateEvent(std::string strBtn);
-     Controler(View *viewer);
+     Controler(Service *servi);
 
 };
 

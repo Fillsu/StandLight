@@ -6,7 +6,7 @@
 #include "Led.h"
 //#include "Controler.h"
 
-enum {LIGHT_OFF,LIGHT_ON};
+
 
 class View
 {

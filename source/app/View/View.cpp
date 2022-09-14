@@ -39,14 +39,14 @@ void View::UpdateView(std::string strView)
 switch( ViewState)
 {
     case LIGHT_OFF:
-    if(strView=="StateOn")
+    if(strView=="ViewOn")
     {
         ViewState=LIGHT_ON;
     }
     break;
 
     case LIGHT_ON:
-    if(strView=="StateOff")
+    if(strView=="ViewOff")
     { 
         ViewState=LIGHT_OFF;
     }

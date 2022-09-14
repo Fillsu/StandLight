@@ -9,6 +9,7 @@ add_executable(${PROJECT_NAME}
 ./source/app/listener/Listener.cpp
 ./source/app/Controler/Controler.cpp
 ./source/app/View/View.cpp
+./source/app/Service/Service.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC
@@ -18,6 +19,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 ./source/app/listener
 ./source/app/Controler
 ./source/app/View
+./source/app/Service
 )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC

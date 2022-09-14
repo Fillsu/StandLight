@@ -1,6 +1,7 @@
 #ifndef __LED_H__
 #define __LED_H__
 
+enum {LIGHT_OFF,LIGHT_ON};
 class Led
 {
 private:
